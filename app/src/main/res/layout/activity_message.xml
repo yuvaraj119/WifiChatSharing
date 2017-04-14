@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c2125"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f6f4ff" />
+
+    <TextView
+        android:id="@+id/usrName"
+        android:layout_width="83dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#f6f4ff" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="182dp"
+        android:layout_weight="1.04" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/input_back"
+        android:fontFamily="sans-serif-condensed"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:singleLine="true" />
+
+    <GridLayout
+        android:id="@+id/gridone"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:alignmentMode="alignBounds"
+        android:background="#0c0f12"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:rowCount="1"
+        android:useDefaultMargins="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/buttonshare"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_row="0"
+            android:background="@drawable/btn_live_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="share"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_row="0"
+            android:background="@drawable/btn_live_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Send"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/selectGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="3"
+        android:alignmentMode="alignBounds"
+        android:background="#0c0f12"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:rowCount="1"
+        android:useDefaultMargins="true"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0" />
+
+        <Button
+            android:id="@+id/buttonSelect"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_row="0"
+            android:background="@drawable/btn_live_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:text="select File"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.03" />
+
+</LinearLayout>
